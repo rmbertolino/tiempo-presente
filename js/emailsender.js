@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('contact-form');
+    const form = document.getElementById('contactForm');
     const responseMessage = document.getElementById('response-message');
     
     const nameInput = document.getElementById('name');
