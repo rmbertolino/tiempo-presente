@@ -1,6 +1,28 @@
 const form = document.getElementById('contact-form');
 const responseMessage = document.getElementById('response-message');
 
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const phoneInput = document.getElementById('phone');
+const messageInput = document.getElementById('message');
+const submitButton = document.getElementById('submitButton');
+
+// Verifica si todos los campos están llenos
+function checkFormFields() {
+  if (nameInput.value.trim() !== "" && emailInput.value.trim() !== "" && messageInput.value.trim() !== "") {
+    submitButton.disabled = false;
+    submitButton.classList.remove('disabled');
+  } else {
+    submitButton.disabled = true;
+    submitButton.classList.add('disabled');
+  }
+}
+
+// Escucha eventos de input en los campos para verificar si están completos
+nameInput.addEventListener('input', checkFormFields);
+emailInput.addEventListener('input', checkFormFields);
+messageInput.addEventListener('input', checkFormFields);
+
 form.addEventListener('submit', function (event) {
     event.preventDefault(); // Evita el envío normal del formulario
 
