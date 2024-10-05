@@ -35,14 +35,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Convierte FormData a JSON
         const data = {
-            nombre: formData.get('name'),
+            name: formData.get('name'),
             email: formData.get('email'),
             phone: formData.get('phone'),
             message: formData.get('message'),
             _subject: "Nuevo mensaje desde tiempopresente.com.ar!", // Asunto personalizado
             _template: "table" // Usar template de tabla en el correo
         };
-        
+        console.log(data)
         fetch('https://formsubmit.co/ajax/rmbertolino@outlook.com', {
             method: 'POST',
             headers: { 
