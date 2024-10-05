@@ -32,13 +32,13 @@ document.addEventListener('DOMContentLoaded', function () {
         const submitButton = document.getElementById('submitButton');
         submitButton.disabled = true; // Desactiva el botón para evitar múltiples envíos
         submitButton.innerHTML = "Enviando..."; // Cambia el texto del botón
-        
+
         // Convierte FormData a JSON
         const data = {
-            nombre: formData.get('nameInput'),
-            email: formData.get('emailInput'),
-            phone: formData.get('phoneInput'),
-            message: formData.get('messageInput'),
+            nombre: formData.get('name'),
+            email: formData.get('email'),
+            phone: formData.get('phone'),
+            message: formData.get('message'),
             _subject: "Nuevo mensaje desde tiempopresente.com.ar!", // Asunto personalizado
             _template: "table" // Usar template de tabla en el correo
         };
