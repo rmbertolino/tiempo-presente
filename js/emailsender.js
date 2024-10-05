@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .finally(() => {
             // Restaura el botón al estado original
             submitButton.disabled = false;
-            submitButton.innerHTML = "Send";
+            submitButton.innerHTML = "Ingresá tu mensaje";
         });
     });
 });
