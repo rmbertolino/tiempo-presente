@@ -295,8 +295,8 @@
                     </div>
                     <div class="col-lg-3">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/avatar.png" alt="..." />
-                            <h4>Licenciada Yanina Ferrari</h4>
+                            <img class="mx-auto rounded-circle" src="assets/img/team/yanina-ferrari.jpg" alt="..." />
+                            <h4>Lic. Yanina Ferrari</h4>
                             <p class="text-muted">Psicóloga subespecializada en  tratamientos cognitivos</p>
                         </div>
                     </div>
@@ -305,28 +305,28 @@
                     <div class="col-lg-3">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/avatar.png" alt="..." />
-                            <h4>Licenciada Cecilia Cevallos Houdinet</h4>
+                            <h4>Lic. Cecilia Cevallos Houdinet</h4>
                             <p class="text-muted">Licenciada en Trabajo Social</p>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/avatar.png" alt="..." />
-                            <h4>Licenciada Ileana Cencarelli</h4>
+                            <h4>Lic. Ileana Cencarelli</h4>
                             <p class="text-muted">Terapista Ocupacional</p>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/avatar.png" alt="..." />
-                            <h4>Licenciada Varinia Croci</h4>
+                            <h4>Lic. Varinia Croci</h4>
                             <p class="text-muted">Musicoterapeuta</p>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/avatar.png" alt="..." />
-                            <h4>Licenciada Magali Sanchez</h4>
+                            <h4>Lic. Magali Sanchez</h4>
                             <p class="text-muted">Kinesióloga</p>
                         </div>
                     </div>
@@ -334,9 +334,9 @@
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/avatar.png" alt="..." />
-                            <h4>Licenciada Adriana Basgall</h4>
-                            <p class="text-muted">Nutricionista</p>
+                            <img class="mx-auto rounded-circle" src="assets/img/team/adriana-basgall.jpg" alt="..." />
+                            <h4>Lic. Adriana Basgall</h4>
+                            <p class="text-muted">Licenciada  en Nutrición</p>
                         </div>
                     </div>
                     <div class="col-lg-3">
@@ -348,15 +348,15 @@
                     </div>
                     <div class="col-lg-3">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/avatar.png" alt="..." />
-                            <h4>Licenciado Damián Medina</h4>
+                            <img class="mx-auto rounded-circle" src="assets/img/team/damian-medina.jpg" alt="..." />
+                            <h4>Lic. Damián Medina</h4>
                             <p class="text-muted">Terapeuta Psicosocial</p>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/avatar.png" alt="..." />
-                            <h4>Licenciada Nora Méndez</h4>
+                            <h4>Lic. Nora Méndez</h4>
                             <p class="text-muted">Licenciada en Enfermería</p>
                         </div>
                     </div>
@@ -422,31 +422,16 @@
                         <div class="col-md-6">
                             <div class="form-group form-group-textarea mb-md-0">
                                 <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
+                                <textarea class="form-control" id="message" placeholder="Tu mensaje *" data-sb-validations="required"></textarea>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">Ingresá tu mensaje.</div>
                             </div>
                         </div>
                     </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Mensaje enviado correctamente.</div>
-                            To activate this form, sign up at
-                            <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                        </div>
-                    </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error enviando mensaje!</div></div>
                     <!-- Submit Button-->
                     <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Enviar Mensaje</button></div>
                 </form>
+
+                <p id="response-message"></p>
             </div>
         </section>
         <!-- Footer-->
@@ -687,5 +672,6 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="js/emailsender.js"></script>
     </body>
 </html>
