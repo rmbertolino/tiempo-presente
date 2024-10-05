@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Si el envío es exitoso, muestra un mensaje de éxito
             responseMessage.innerHTML = `<div id="submitSuccessMessage">
             <div class="text-center text-white mb-3">
-            <div class="fw-bolder">Mensaje enviado correctamente. En breve nos pondremos en contacto con usted.</div>
+            <div class="fw-bolder">Mensaje enviado correctamente. En breve nos pondremos en contacto.</div>
             </div>
             </div>`;
             form.reset(); // Limpia el formulario
