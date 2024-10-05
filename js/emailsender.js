@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
             _subject: "Nuevo mensaje desde tiempopresente.com.ar!", // Asunto personalizado
             _template: "table" // Usar template de tabla en el correo
         };
-        console.log(data)
+
         fetch('https://formsubmit.co/ajax/rmbertolino@outlook.com', {
             method: 'POST',
             headers: { 
@@ -60,22 +60,23 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .then(data => {
             // Si el envío es exitoso, muestra un mensaje de éxito
-            responseMessage.innerHTML = `<div class="d-none" id="submitSuccessMessage">
+            responseMessage.innerHTML = `<div id="submitSuccessMessage">
             <div class="text-center text-white mb-3">
-            <div class="fw-bolder">Mensaje enviado correctamente.</div>
+            <div class="fw-bolder">Mensaje enviado correctamente. En breve nos pondremos en contacto con usted.</div>
             </div>
             </div>`;
             form.reset(); // Limpia el formulario
         })
         .catch(error => {
+            console.log('entron al error')
             // Si ocurre un error, muestra un mensaje de error
-            responseMessage.innerHTML = `<div class="d-none" id="submitErrorMessage">
-            <div class="text-center text-danger mb-3">Error enviando mensaje!</div>
+            responseMessage.innerHTML = `<div id="submitErrorMessage">
+            <div class="text-center text-danger mb-3">Error enviando mensaje! Reintente.</div>
             </div>`;
         })
         .finally(() => {
             // Restaura el botón al estado original
-            submitButton.disabled = false;
+            submitButton.classList.add('disabled');
             submitButton.innerHTML = "Ingresá tu mensaje";
         });
     });
