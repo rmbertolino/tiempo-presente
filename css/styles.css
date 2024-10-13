@@ -10899,7 +10899,7 @@ p {
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.95rem;
+  font-size: 0.90rem;
   color: #fff;
   letter-spacing: 0.0625em;
 }
@@ -11321,4 +11321,43 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Estilos para los botones flotantes */
+.floating-btn {
+  position: fixed;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.floating-btn img {
+  width: 40px;
+  height: 40px;
+}
+
+.whatsapp-btn {
+  bottom: 20px; /* WhatsApp más abajo */
+}
+
+.facebook-btn {
+  bottom: 100px; /* Facebook más arriba */
+  background-color: #1877F2; /* Color de fondo de Facebook */
+}
+
+/* Hover effects */
+.floating-btn:hover {
+  background-color: #22bb59; /* Hover de WhatsApp */
+}
+
+.facebook-btn:hover {
+  background-color: #1558B1; /* Hover de Facebook */
 }
