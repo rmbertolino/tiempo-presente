@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
             _template: "table" // Usar template de tabla en el correo
         };
 
-        fetch('https://formsubmit.co/ajax/rmbertolino@outlook.com', {
+        fetch('https://formsubmit.co/ajax/geriatricotpresente@gmail.com', {
             method: 'POST',
             headers: { 
                 'Content-Type': 'application/json',
